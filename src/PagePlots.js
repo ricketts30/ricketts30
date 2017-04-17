@@ -158,7 +158,7 @@ class PagePlots extends Component {
             <p>Generate will choose a random plot</p>
             <p>Regenerate will re-apply the values to the current plot</p>
             <p>Reset returns the page to factory settings.</p>
-            <p>A plot title ending in '(7) indicates the source is <a href='https://en.m.wikipedia.org/wiki/The_Seven_Basic_Plots'>The Seven Basic Plots</a>.</p>
+            <p>A plot title ending in '(7)' indicates the source is <a href='https://en.m.wikipedia.org/wiki/The_Seven_Basic_Plots'>The Seven Basic Plots</a>.</p>
             <p>A plot title ending in '(36)' indicates the source is <a href='https://en.wikipedia.org/wiki/The_Thirty-Six_Dramatic_Situations'>The Thirty Six Dramatic Situations</a>.</p>
           </Grid>
         
