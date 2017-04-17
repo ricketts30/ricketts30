@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PageHome from './PageHome';
 import PageAbout from './PageAbout';
+import PageAlpha from './PageAlpha';
 import PagePlots from './PagePlots';
 import './index.css';
 
@@ -21,6 +22,9 @@ var item = null;
 switch(page.toLowerCase()){
   case 'about':
     item = <PageAbout qStrings={params}/>;
+  break;
+  case 'alpha':
+    item = <PageAlpha qStrings={params}/>;
   break;
   case 'plots':
     item = <PagePlots qStrings={params}/>;

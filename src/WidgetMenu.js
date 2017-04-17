@@ -26,7 +26,7 @@ class WidgetMenu extends Component {
             </Navbar.Header>
             <Navbar.Collapse>
               <Nav>
-                <NavItem eventKey={1} href="/?page=action">Action</NavItem>
+                <NavItem eventKey={1} href="/?page=alpha">Alpha</NavItem>
                 <NavDropdown eventKey={2} title="Writing" id="basic-nav-dropdown-writing">
                   <MenuItem eventKey={2.1} href="/?page=plots" >Plots</MenuItem>
                 </NavDropdown>
