@@ -31,7 +31,7 @@ class PageAlpha extends Component {
         <Grid>
             <p>This page contains what I am currently tinkering with. Nothing here is likely to be stable or even working!</p>
             <p>using d3 with react-d3-wrap:</p>
-            <WidgetMyChart data={ [0, 1, 2] } width={400} height={300} options={ {color: '#ff0000'} } />
+            <WidgetMyChart data={ [4, 8, 15, 16, 23, 42] } width={500} height={300} options={ {color: '#ff0000'} } />
 
             <h2>References</h2>
             <ul>
