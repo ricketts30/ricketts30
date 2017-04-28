@@ -4,6 +4,7 @@ import PageHome from './PageHome';
 import PageAbout from './PageAbout';
 import PageAlpha from './PageAlpha';
 import PagePlots from './PagePlots';
+import PageRedux from './PageRedux';
 import './index.css';
 
 var page = 'default';
@@ -25,6 +26,8 @@ switch(page.toLowerCase()){
   break;
   case 'alpha':
     item = <PageAlpha qStrings={params}/>;
+  break;case 'redux':
+    item = <PageRedux qStrings={params}/>;
   break;
   case 'plots':
     item = <PagePlots qStrings={params}/>;

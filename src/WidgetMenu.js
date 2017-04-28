@@ -37,6 +37,9 @@ class WidgetMenu extends Component {
                   <MenuItem divider />
                   <MenuItem eventKey={3.3}>to implement ...</MenuItem>
                 </NavDropdown>
+                <NavDropdown eventKey={4} title="Tech" id="basic-nav-dropdown-tech">
+                  <MenuItem eventKey={4.1} href="/?page=redux" >Redux</MenuItem>
+                </NavDropdown>
               </Nav>
               <Nav pullRight>
                 <NavItem eventKey={1} href="/?page=About">About</NavItem>
