@@ -3,6 +3,8 @@ import { Jumbotron, Grid } from 'react-bootstrap';
 
 import WidgetMenu from './WidgetMenu'
 
+import GApp from './GApp'
+
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import todoApp from './reducers'
@@ -37,12 +39,21 @@ class PageRedux extends Component {
             <p>This is a page for playing with Redux-based programming</p>
             <h2>Todo App</h2>
             <p>This is the standard todo list application from the redux &amp; react tutorial.</p>
+
             <Provider store={this.state.store}>
               <App />
             </Provider>
             
-            <h2></h2>
-            
+            <h2>GApp</h2>
+              <p>This is a fully self-contained Redux-based React component</p>
+              <GApp/>
+              <p>In fact there are two instances on this page and they 
+                are fully separate from each other (and share no state).</p>
+              <GApp/>
+              <p>Although I fully admit that they don't do much!</p>
+
+              <h2></h2>
+
             <h2>References</h2>
             <ul>
                 <li><a href='http://redux.js.org/'>Redux.js.org</a></li>

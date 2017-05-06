@@ -4,6 +4,7 @@ An playground of React.js experiments: Hosted at https://ricketts30.herokuapp.co
 
 ## Release Notes
 
+* Sat 06 May 2017 - added simple Redux component (GApp) and some 'alpha' code
 * Fri 28 Apr 2017 - added basic React/Redux to-do app
 * Tue 18 Apr 2017 - D3 page renders simple graph and graphics
 * Mon 17 Apr 2017 - adding an experimental D3 page

@@ -3,6 +3,7 @@ import { Jumbotron, Grid } from 'react-bootstrap';
 
 import WidgetMenu from './WidgetMenu'
 import WidgetMyChart from './WidgetMyChart'
+import LmodNumber from './LmodNumber'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
@@ -16,10 +17,20 @@ class PageAlpha extends Component {
         super(props);
         this.state = {
             qString: props.qString,
+            showOverlays: false,
         };
+
+        // hack to make 'this; work correctly...
+        this.toggle = this.toggle.bind(this);
+        
     }
 
+  toggle() {
+    this.setState({ showOverlays: !this.state.showOverlays });
+  }
+
   render() {
+
     return (
       <div>
         <WidgetMenu qString={this.state.qString} />
@@ -30,8 +41,15 @@ class PageAlpha extends Component {
         </Jumbotron>
         <Grid>
             <p>This page contains what I am currently tinkering with. Nothing here is likely to be stable or even working!</p>
+            <h2>d3 &amp; React.js</h2>
             <p>using d3 with react-d3-wrap:</p>
             <WidgetMyChart data={ [4, 8, 15, 16, 23, 42] } width={500} height={300} options={ {color: '#ff0000'} } />
+
+           
+
+      <h2>L.M.O.D.</h2>
+        <LmodNumber />
+
 
             <h2>References</h2>
             <ul>
