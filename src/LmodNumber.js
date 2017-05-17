@@ -49,7 +49,10 @@ class LmodNumber extends Component {
     }
 
     onChildChanged(state, idx){
-        this.setState({'act': 'idx:' + idx + ', method: ' + state.method + ', payload: ' + state.payload});
+        
+        this.setState(
+            {'act': 'idx:' + idx + ', method: ' + state.method + ', payload: ' + state.payload})
+            ;
     }
 
     render() {

@@ -15,7 +15,6 @@ class LmodNumberCell extends Component {
             theIdx: props.idx,
             display: 'xx',
         };
-
         this.informParent = this.informParent.bind(this);
     }
 
@@ -48,7 +47,7 @@ class LmodNumberCell extends Component {
          });
 
     const popoverClickRootClose = (
-      <Popover id="popover-trigger-click-root-close" >
+      <Popover id="popover-trigger-click-root-close" className="LmodPop" >
         <p>{buttons}</p>
         <p>
             <ButtonGroup>

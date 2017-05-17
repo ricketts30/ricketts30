@@ -5,6 +5,8 @@ import WidgetMenu from './WidgetMenu'
 import WidgetMyChart from './WidgetMyChart'
 import LmodNumber from './LmodNumber'
 
+import Game from './Game/Game';
+
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
@@ -45,7 +47,8 @@ class PageAlpha extends Component {
             <p>using d3 with react-d3-wrap:</p>
             <WidgetMyChart data={ [4, 8, 15, 16, 23, 42] } width={500} height={300} options={ {color: '#ff0000'} } />
 
-           
+           <h2>Game Stuff</h2>
+              <Game/>
 
       <h2>L.M.O.D.</h2>
         <LmodNumber />
