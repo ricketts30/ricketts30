@@ -6,6 +6,8 @@ const increment = (state = GameInitialState.Create(), action) => {
             return Object.assign({}, state, { counter: state.counter + 1});
         case 'DECREMENT':
             return Object.assign({}, state, { counter: state.counter - 1});
+        case 'START':
+            return Object.assign({}, state, { stateName: 'start' });
         default:
             return state;    
     }

@@ -18,7 +18,43 @@
   font-size: large;
 }
 
+.contentBelowJumbtron{
+  margin-left: 10%;
+  margin-right: 20%;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.board tr {
+  background-color: cornsilk;
+  border: 0px;
+}
+
+.board td{
+  font-size: xx-large;
+  font-family: monospace;
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.cell {
+  border: 1px solid darkolivegreen;
+  background-color: white;
+}
+
+.vert {
+  border: 0px;
+}
+
+.horiz {
+  border: 0px;
+}
+
+.slash {
+  border: 0px;
 }

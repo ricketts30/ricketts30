@@ -5,6 +5,7 @@ import PageAbout from './PageAbout';
 import PageAlpha from './PageAlpha';
 import PagePlots from './PagePlots';
 import PageRedux from './PageRedux';
+import PageHareAndHounds from './PageHareAndHounds';
 import './index.css';
 
 var page = 'default';
@@ -23,6 +24,9 @@ var item = null;
 switch(page.toLowerCase()){
   case 'about':
     item = <PageAbout qStrings={params}/>;
+  break;
+  case 'hareandhounds':
+    item = <PageHareAndHounds qStrings={params}/>;
   break;
   case 'alpha':
     item = <PageAlpha qStrings={params}/>;

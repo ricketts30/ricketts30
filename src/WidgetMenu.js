@@ -31,11 +31,7 @@ class WidgetMenu extends Component {
                   <MenuItem eventKey={2.1} href="/?page=plots" >Plots</MenuItem>
                 </NavDropdown>
                 <NavDropdown eventKey={3} title="Games" id="basic-nav-dropdown-games">
-                  <MenuItem eventKey={3.1}>... coming soon</MenuItem>
-                  <MenuItem eventKey={3.2}>once I have decided</MenuItem>
-                  <MenuItem eventKey={3.3}>which game</MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey={3.3}>to implement ...</MenuItem>
+                  <MenuItem eventKey={3.1} href="/?page=hareandhounds">Hare and Hounds</MenuItem>
                 </NavDropdown>
                 <NavDropdown eventKey={4} title="Tech" id="basic-nav-dropdown-tech">
                   <MenuItem eventKey={4.1} href="/?page=redux" >Redux</MenuItem>
