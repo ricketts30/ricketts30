@@ -10,9 +10,11 @@ export const actionDecrement = () => {
     }
 }
 
-export const actionStart = () => {
+export const actionStart = (player, mode) => {
     return {
-        type: 'START'
+        type: 'START',
+        player: player,
+        mode: mode
     }
 }
 
@@ -87,5 +89,24 @@ or more compactly as
    - these can be the identifiers of the cross-bars in the UX
 
 
+so once the game has initiated - we would build the initial board
+and call the MOVE action 
+  if the next move is for the computer then calculate the possible moves
+  choose one and make it - returning the new game board
+  if the next move is for the user then it just calculates the list of possible moves
+  - which will show visually
+  
+  then the system will wait for an action PLAY which is when a legal move edge is clicked
 
+  then the move is applied and the computer starts thinking about it's move.
+
+  we should probably allow for the fact that the computer may take some time to perform its move
+  calculations
+
+  and have a status
+
+  Messages:
+    Player|Javascript (Hare|Hound) to move
+    Player|Javascript (Hare|Hound) has won
+    Player has Quit!
 */ 

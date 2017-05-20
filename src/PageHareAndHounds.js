@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { Jumbotron, Grid } from 'react-bootstrap';
+//import { Jumbotron, Grid } from 'react-bootstrap';
 
 import WidgetMenu from './WidgetMenu'
 
@@ -26,17 +26,10 @@ class PageHareAndHounds extends Component {
     return (
       <div>
         <WidgetMenu qString={this.state.qString} />
-        <Jumbotron className="PageTop">
-          <Grid>
+        <div className="contentWithoutJumbtron">
             <h1>Hare and Hounds</h1>
             <p>The rules of the game can be found at: <a href="https://en.wikipedia.org/wiki/Hare_games">https://en.wikipedia.org/wiki/Hare_games</a></p>    
-          </Grid>
-        </Jumbotron>
-
-        <div className="contentBelowJumbtron">
-
-        <Game/>
-
+            <Game/>
         </div>
       </div>
     );
