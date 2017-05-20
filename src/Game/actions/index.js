@@ -109,4 +109,6 @@ and call the MOVE action
     Player|Javascript (Hare|Hound) to move
     Player|Javascript (Hare|Hound) has won
     Player has Quit!
+
+should I have a spinner icon for "thinking"?
 */ 
