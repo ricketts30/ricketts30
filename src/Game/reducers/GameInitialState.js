@@ -12,7 +12,8 @@ GameInitialState.Create = function(){
         player: '?',
         mode: '?',
         next: 'H',
-        board: ['h','.','.','h','.','.','.','v','h','.','.']
+        board: ['h','.','.','h','.','.','.','v','h','.','.'],
+        notation: 'h..h...vh..|00|H'
     }
 }
 
